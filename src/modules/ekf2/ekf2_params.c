@@ -1391,3 +1391,17 @@ PARAM_DEFINE_INT32(EKF2_SYNT_MAG_Z, 0);
  * @decimal 1
  */
 PARAM_DEFINE_FLOAT(EKF2_GSF_TAS, 15.0f);
+
+
+/**
+ * Enable or disable fake GPS jamming indication
+ *
+ * Overrides data reported by real publication
+ *
+ * @group EKF2
+ * @min 0
+ * @max 1
+ * @value 0 GPS not jammed
+ * @value 1 GPS jammed
+ */
+PARAM_DEFINE_INT32(EKF2_GPS_FAKE_JM, 0);

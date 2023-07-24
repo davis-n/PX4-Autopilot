@@ -543,8 +543,9 @@ private:
 
 		// Used by EKF-GSF experimental yaw estimator
 		(ParamExtFloat<px4::params::EKF2_GSF_TAS>)
-		_param_ekf2_gsf_tas_default	///< default value of true airspeed assumed during fixed wing operation
+		_param_ekf2_gsf_tas_default,	///< default value of true airspeed assumed during fixed wing operation
 
+		(ParamInt<px4::params::EKF2_GPS_FAKE_JM>) _param_ekf2_gps_fake_jm
 	)
 };
 #endif // !EKF2_HPP
